@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/frontbattle/static/css/main.375cd026.css",
-    "main.js": "/frontbattle/static/js/main.2f5f58a6.js",
-    "static/media/bg-image.png": "/frontbattle/static/media/bg-image.a151fefbe3e5783ed662.png",
-    "index.html": "/frontbattle/index.html",
-    "main.375cd026.css.map": "/frontbattle/static/css/main.375cd026.css.map",
-    "main.2f5f58a6.js.map": "/frontbattle/static/js/main.2f5f58a6.js.map"
+    "main.css": "/Frontbattle/static/css/main.375cd026.css",
+    "main.js": "/Frontbattle/static/js/main.809c71a2.js",
+    "static/media/bg-image.png": "/Frontbattle/static/media/bg-image.a151fefbe3e5783ed662.png",
+    "index.html": "/Frontbattle/index.html",
+    "main.375cd026.css.map": "/Frontbattle/static/css/main.375cd026.css.map",
+    "main.809c71a2.js.map": "/Frontbattle/static/js/main.809c71a2.js.map"
   },
   "entrypoints": [
     "static/css/main.375cd026.css",
-    "static/js/main.2f5f58a6.js"
+    "static/js/main.809c71a2.js"
   ]
 }
