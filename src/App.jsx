@@ -1,10 +1,8 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import Container from "./Components/Container/Container";
 import Layout from "./Components/Layout/Layout";
 import styled from "styled-components";
 import BackImg from "./bg-image.png";
-import Home from "./Components/Home/Home"
 const Main = styled.div`
   width: 100%;
   height: 100vh;
