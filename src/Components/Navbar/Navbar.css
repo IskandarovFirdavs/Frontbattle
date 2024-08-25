@@ -1,0 +1,39 @@
+.header-bottom {
+    display: flex;
+    gap: 34px;
+    height: 10%;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+hr {
+    height: 46px;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.search-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #7B61FF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 18px;
+    cursor: pointer;
+}

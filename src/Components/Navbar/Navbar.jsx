@@ -3,9 +3,12 @@ import styled from "styled-components";
 import Logo from "./img.png";
 import Telgramicon from "./Vector.png";
 import { FaCircle } from "react-icons/fa";
+import "./Navbar.css";
 import { CiLocationOn } from "react-icons/ci";
 import { MdDirectionsBike } from "react-icons/md";
 import { CiCalendarDate } from "react-icons/ci";
+import { PiUsers } from "react-icons/pi";
+import { FaSearch } from "react-icons/fa";
 
 const All = styled.div`
   width: 100%;
@@ -16,6 +19,7 @@ const All = styled.div`
   height: 90vh;
   background: none;
 `;
+
 const Main = styled.div`
   width: 100%;
   display: flex;
@@ -24,6 +28,7 @@ const Main = styled.div`
   height: 5%;
   padding: 0 20px;
 `;
+
 const Bottom = styled.div`
   width: 100%;
   display: flex;
@@ -54,29 +59,33 @@ const Texts = styled.div`
 const H3 = styled.h3`
   margin: 0;
   font-family: "Poppins", sans-serif;
-
   color: white;
 `;
+
 const H2 = styled.h2`
   margin: 0;
   color: white;
   font-family: "Poppins", sans-serif;
 `;
+
 const P = styled.p`
   margin: 0;
   color: white;
   opacity: 70%;
   font-family: "Poppins", sans-serif;
 `;
-const Img = styled("img")`
+
+const Img = styled.img`
   border-radius: 50%;
 `;
-const Sub = styled("sub")`
+
+const Sub = styled.sub`
   color: red;
   margin-left: -20px;
   margin-top: -30px;
 `;
-const BotH1 = styled("h1")`
+
+const BotH1 = styled.h1`
   font-family: Poppins;
   font-size: 48px;
   font-weight: 600;
@@ -85,12 +94,12 @@ const BotH1 = styled("h1")`
   line-height: 62px;
   text-align: left;
 `;
-const Button = styled("button")`
+
+const Button = styled.button`
   width: 272px;
   height: 72px;
   border: none;
   border-radius: 20px;
-  opacity: 0px;
   background: #7b61ff;
   font-family: Poppins;
   font-size: 18px;
@@ -98,15 +107,16 @@ const Button = styled("button")`
   line-height: 18px;
   color: #ffffff;
 `;
-const Foot = styled("div")`
+
+const Foot = styled.div`
   width: 140px;
   background-color: #ffffff;
   height: 15%;
   padding: 8px 0px 0px 0px;
   gap: 34px;
   border-radius: 20px;
-  opacity: 0px;
 `;
+
 const Navbar = () => {
   return (
     <All>
@@ -114,7 +124,7 @@ const Navbar = () => {
         <H2>
           2rism{" "}
           <sup>
-            <img src={Telgramicon} alt="" />
+            <img src={Telgramicon} alt="Telegram Icon" />
           </sup>
         </H2>
         <NavLinks>
@@ -141,11 +151,43 @@ const Navbar = () => {
         <BotH1>Discover the most engaging places</BotH1>
         <Button>Discover on 3D Globe</Button>
       </Bottom>
-      <Foot>
-        <CiLocationOn />
-        <MdDirectionsBike />
-        <CiCalendarDate />
-      </Foot>
+
+      <div className="header-bottom">
+        <div className="section1">
+          <div className="sec-icon">
+            <CiLocationOn color="gold"/>
+          </div>
+          <p>Explore nearby destinations</p>
+        </div>
+        <hr />
+        <div className="section1">
+          <div className="sec-icon">
+            <MdDirectionsBike color="gold"/>
+          </div>
+          <p>All Activities</p>
+        </div>
+        <hr />
+        <div className="section1">
+          <div className="sec-icon">
+            <CiCalendarDate color="gold"/>
+          </div>
+          <p>Choose a Date</p>
+        </div>
+        <hr />
+        <div className="section1">
+          <div className="sec-icon">
+            <PiUsers color="gold"  />
+          </div>
+          <p>1 guest</p>
+        </div>
+        <div className="section-search">
+          <div className="search-btn">
+            <div className="search-icon">
+              <FaSearch />
+            </div>
+          </div>
+        </div>
+      </div>
     </All>
   );
 };
