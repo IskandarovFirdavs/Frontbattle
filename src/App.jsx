@@ -9,7 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/Frontbattle" element={<Home/>}></Route>
         {/* <Route path="/" element={}></Route>
         <Route path="/" element={}></Route>
         <Route path="/" element={}></Route>
